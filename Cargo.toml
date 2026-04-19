@@ -1,0 +1,21 @@
+[package]
+name = "ipc_broker"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "broker"
+path = "src/bin/broker.rs"
+
+[[bin]]
+name = "device"
+path = "src/bin/device.rs"
+
+[[bin]]
+name = "monitor"
+path = "src/bin/monitor.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = "0.4"
