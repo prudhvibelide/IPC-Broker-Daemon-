@@ -1,5 +1,5 @@
 ````md
-# IPC Broker Daemon
+IPC Broker Daemon
 
 This project is a simple Linux IPC system written in Rust. It has a central broker process, one or more device processes, and a monitor process. Devices send telemetry and heartbeat messages to the broker, and the broker forwards them to the monitor. The monitor can also send commands back to a selected device.
 
